@@ -1,0 +1,14 @@
+.he, .he1{
+background-color:yellow;
+position:relative;
+}
+.tab1{
+
+width:100px;}
+#td11, #td12, #td21, #td22, #td31, #td32, #td41, #td42, #td51, #td52, #td61, #td62{
+width:25%;
+background-color:silver;}
+*{background-color:hsla(9, 100%, 64%, 0.5);}
+.hea{
+background-color:black;
+color:white;}

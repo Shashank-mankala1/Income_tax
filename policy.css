@@ -1,0 +1,54 @@
+.btn1{
+position:absolute;
+top:350px;
+right:100px;
+left:600px;
+padding: 15px 32px;
+border-radius: 8px;
+display: inline-block;
+font-size: 24px;
+background-color: #008CBA;
+}
+.btn2{
+position:absolute;
+top:350px;
+right:80px;
+left:800px;
+padding: 15px 32px;
+border-radius: 8px;
+display: inline-block;
+font-size: 24px;
+background-color: #008CBA;
+}
+h1{text-shadow: 2px 2px 5px red;}
+h3{text-shadow: 2px 2px 5px orange;}
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.container img {
+  width:250%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+padding: 15px 32px;
+border-radius: 8px;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: black;
+}

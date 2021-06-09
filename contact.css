@@ -1,0 +1,24 @@
+body{
+	background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+	margin:auto;
+	border-style:;
+	border-width:100px;
+}
+.hea{
+	background-color:cyan;
+	text-shadow: 2px 2px 5px red;
+	text-size:20px;}
+table{	
+	background-color:silver;
+	border-spacing: 5px;}
+.he{
+	background-color:olive;}
+.he1{
+	background-color:olive;}
+.he2{
+	background-color:olive;}
+.he3{
+	background-color:olive;}
+td{
+	color:black;}
+	

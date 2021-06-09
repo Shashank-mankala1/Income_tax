@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<title>Login Page
+</title>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="log.css">
+	<script>
+
+		function abc() {
+			var str = 123456;
+			var str1 = document.getElementById("text1").value;
+			var str2 = document.getElementById("text2").value;
+			if (str2 == str) {
+				document.location.href = "proj1.html";
+			}
+			else {
+				alert("The password you've is enter is incorrect.Please try with correct password");
+			}
+		}
+
+
+	</script>
+
+</head>
+
+<body>
+	<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+	<h1 align="center">LOG IN DETAILS : </H1>
+	<div class="log" id="myDiv1">
+		<input id="text1" placeholder="Username" required />
+		<br>
+		<input type="password" id="text2" placeholder="password" required />
+		<button type="submit" onclick="abc()">Submit</button><br>
+		<p style="font-size:15px;">By logging your account you agree to our <a href="terms.html"
+				style="color:dodgerblue">Terms & Privacy</a>.</p><br>
+		<a href="login.html"><button>Back</button></a>
+		<a href="index.html"><button>Close</button></a>
+	</div>
+</body>
+
+</html>
+<script>
+	document.getElementById("myDiv1").style.border = "thick solid #0000FF";
+</script>

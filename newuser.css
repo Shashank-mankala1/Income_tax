@@ -1,0 +1,11 @@
+.user{
+position:absolute;
+width:300px;
+padding: 15px 32px;
+top:300px;
+right:100px;
+left:580px;
+background-image: radial-gradient(circle, red, yellow, green);
+font-size: 24px;
+background-color:olive;}
+h2{text-shadow: 2px 2px 5px red;}

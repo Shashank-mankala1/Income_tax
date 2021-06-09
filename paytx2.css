@@ -1,0 +1,35 @@
+* {box-sizing: border-box}
+.user{
+position:relative;
+}
+hr {
+  border: 1px solid black;
+  margin-bottom: 25px;
+}
+input{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.sub, .close{
+  float: left;
+  width: 50%;
+}
+.close {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+.sub{
+  padding: 14px 20px;
+  background-color: lightgreen;
+}
+.page{
+  padding: 14px 20px;
+  background-color: lightblue;
+  width:100%;
+}
+#td11, #td21, #td31, #td41, #td51, #td61, #td71{
+width:50%;}

@@ -1,0 +1,45 @@
+<!DOCTYPE>
+<html>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="policy.css">
+    <div class="container">
+        <dialog id="myFirstDialog" style="width:100%;background-color:#F4FFEF;border:1px thick black;">
+            <h1 align="center">INCOME TAX DEPARTMENT</H1>
+            <H3 align="center">SERVICE QUALITY POLICY</h3>
+            <p>The Income Tax Department is committed to promote voluntary compliance with Direct Tax Laws through
+                quality taxpayer service and firm administration.
+
+                The Department endeavours to be transparent and fair in its processes. It consistently strives for
+                providing efficient services and assisting the taxpayers to discharge their tax obligations. It aspires
+                for continual improvement in its service delivery mechanism by upgrading the infrastructure and skill
+                sets of its employees for ensuring the desired level of taxpayers' satisfaction.
+
+                The Department is resolute in complying with the requirements of IS 15700:2005 and continually improving
+                the effectiveness of the Service Quality Management System.
+            </p>
+
+            <button id="hide">Close</button>
+
+        </dialog>
+        <img src="background-verification-policy.jpeg" alt="policy">
+        <button id="show" class="btn1">Open policy</button><br>
+        <a href="index.html"><button class="btn2">Back</button></a>
+    </div>
+
+
+    <script type="text/JavaScript">
+(function() {    
+    var dialog = document.getElementById('myFirstDialog');    
+    document.getElementById('show').onclick = function() {    
+        dialog.show();    
+    };    
+    document.getElementById('hide').onclick = function() {    
+        dialog.close();    
+    };    
+})();   
+</script>
+
+</body>
+
+</html>

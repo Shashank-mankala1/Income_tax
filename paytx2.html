@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>Your Details
+</title>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="paytx2.css">
+</head>
+
+<body>
+	<h2 align="center"><u>ENTER YOUR DETAILS : </u></H2>
+	<div class="user" id="myDiv">
+		<label for="name"><b>Name</b></label>
+		<input type="text" id="text1" placeholder="Enter your full name" value="" required><br>
+
+		<label for="num"><b>Mobile number</b></label>
+		<input type="text" id="text2" placeholder="Enter your mobile number" value="" required><br>
+
+		<label for="email"><b>Email</b></label>
+		<input type="text" id="text3" placeholder="Enter your Email address" value="" required><br>
+
+		<label for="psw"><b>Password</b></label>
+		<input type="password" id="text2" placeholder="Enter your password" required><br>
+
+		<label for="taxid"><b>Tax ID</b></label>
+		<input type="text" id="text4" placeholder="Enter your tax id" value="" required><br>
+
+		<label for="amt"><b>Amount</b></label>
+		<input type="text" id="text5" placeholder="Enter amount" value="" required><br>
+
+
+
+
+		<a href="proj1.html"><button class="close">Close</button></a></hr>
+		<a><button class="sub" onclick="func()">Pay Tax</button></a><br>
+		<p align="center" style="font-size:25px;">Scroll down to see your receipt &#128071;</p>
+	</div>
+
+
+	<br><br><br><br><br><br><br><br>
+	<div id="myDiv1">
+		<table class="tab1" border="2" align="center" style="width:100%" style="size:100%" ;>
+			<th class="he" colspan="1">Info</th>
+			<th class="he1" rowspan="1">Details</th>
+			<tr>
+				<td id="td11">Name</td>
+				<td id="td12"></td>
+			</tr>
+			<tr>
+				<td id="td21">mobile no.</td>
+				<td id="td22"></td>
+			</tr>
+			<tr>
+				<td id="td31">email id</td>
+				<td id="td32"></td>
+			</tr>
+			<tr>
+				<td id="td41">tax id</td>
+				<td id="td42"></td>
+			</tr>
+			<tr>
+				<td id="td51">Receipt id</td>
+				<td id="td52"></td>
+			</tr>
+			<tr>
+				<td id="td61">Amount</td>
+				<td id="td62"></td>
+			</tr>
+			<tr>
+				<td id="td71">Date and time of transaction &#9200;</td>
+				<td id="date"></td>
+			</tr>
+			<caption class="hea" style="font-size:25px;background-color:silver;"><b>Receipt</b></caption>
+		</table>
+	</div>
+	<button class="page" onclick="window.print()">Print this page</button><br><br><br><br><br><br>
+</body>
+
+</html>
+<script>
+	document.getElementById("myDiv").style.border = "thick solid #0000FF";
+	document.getElementById("myDiv1").style.border = "thick solid black";
+	function func() {
+		confirm("Confirm to pay tax!");
+		var a = document.getElementById("text1").value;
+		document.getElementById("td12").innerHTML = a;
+		var b = document.getElementById("text2").value;
+		document.getElementById("td22").innerHTML = b;
+		var c = document.getElementById("text3").value;
+		document.getElementById("td32").innerHTML = c;
+		var d = document.getElementById("text4").value;
+		document.getElementById("td42").innerHTML = d;
+		var e = document.getElementById("text5").value;
+		document.getElementById("td62").innerHTML = e;
+		var f = new Date();
+		document.getElementById("date").innerHTML = f;
+		document.getElementById("td52").innerHTML = Math.floor(Math.random() * 101);
+	}
+</script>
